@@ -1,30 +1,37 @@
-# Prueba Tecnica Cloud Engineer
+# Prueba Técnica Cloud Engineer
 
-## Introduccion
-Esta prueba evalua la capacidad para disenar, implementar y auditar controles de gobernanza en nube. El escenario considera una aplicacion web global que gestiona PII y consume un modelo de IA via API, con enfoque multi-nube (AWS y GCP) y ejecucion practica en AWS.
+## Introducción
+Esta prueba evalúa la capacidad para diseñar, implementar y auditar controles de gobernanza en la nube.
+El escenario considera una aplicación web global que gestiona información sensible (PII) y consume un modelo de IA vía API, con un enfoque **multi-nube a nivel conceptual (AWS y GCP)** y **ejecución práctica en AWS**.
+
+El objetivo es demostrar criterio en gobierno de nube, seguridad, operación e infraestructura como código, combinando diseño teórico con implementación real.
+
+---
 
 ## Entregables
-- Tarea 1: Documento de estrategia de gobernanza y diseno.
-- Tarea 1.2: IaC en Terraform para un bucket S3 seguro.
-- Tarea 1.3: Script en Python (Boto3) para auditoria de gobernanza en S3.
 
-## Estructura
-- Tarea_1/
-- Tarea_1.2/
-- Tarea_1.3/
+- **Tarea 1:** Documento de estrategia de gobernanza y diseño (enfoque multi-cloud).
+- **Tarea 1.2:** Implementación práctica de Infraestructura como Código (Terraform) para un bucket S3 seguro en AWS.
+- **Tarea 1.3:** Script en Python (Boto3) para auditoría de gobernanza sobre buckets S3.
 
-## Diagrama
-```mermaid
-flowchart LR
-    A[Tarea 1<br/>Gobernanza y diseno] --> B[Tarea 1.2<br/>Terraform S3]
-    B --> C[Tarea 1.3<br/>Auditoria S3]
-    C --> D[Reporte de cumplimiento]
-```
+---
 
-## Detalle por carpeta
-- Tarea_1: `Estrategia_Gobernanza_&_Diseño.md`
-- Tarea_1.2: `README.md`, `terraform/`, evidencias en imagenes
-- Tarea_1.3: `Audit.py`, `README.md`
+## Implementación práctica
+La solución **no se quedó en un enfoque teórico**.  
+Las tareas técnicas fueron **implementadas y ejecutadas en una cuenta real de AWS**, incluyendo:
+
+- Creación de recursos mediante Terraform.
+- Validación de controles de seguridad (versionamiento, encriptación, acceso restringido).
+- Ejecución real del script de auditoría utilizando credenciales AWS y el SDK Boto3.
+- Verificación de resultados tanto por consola como por AWS CLI.
+
+Esto permite demostrar la viabilidad y funcionamiento real de los controles propuestos.
+
+---
 
 ## Nota
-Se utilizo IA para la creacion de los README.md y para entender conceptos de Terraform y Python que desconociamos.
+Se utilizó IA como apoyo para:
+- Redacción y mejora de documentación (`README.md`).
+- Comprensión de conceptos específicos de Terraform y Python durante el desarrollo.
+
+Las decisiones de diseño, la implementación de infraestructura y la ejecución de los scripts fueron realizadas y validadas manualmente en un entorno real de AWS.
