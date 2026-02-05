@@ -11,13 +11,6 @@ Repositorio con tres entregables:
 - Tarea_1.2/
 - Tarea_1.3/
 
-## Diagrama
-```mermaid
-flowchart TB
-    T1[Documento de Gobernanza] --> T12[Terraform S3]
-    T12 --> T13[Auditoria S3]
-    T13 --> R[Reporte de cumplimiento]
-```
 
 ## Detalle por carpeta
 - Tarea_1: `Estrategia_Gobernanza_&_Diseño.md`
@@ -25,4 +18,4 @@ flowchart TB
 - Tarea_1.3: `Audit.py`, `README.md`
 
 ## Nota
-Se utilizo IA para la creacion de los README.md y para entender conceptos de Terraform y Python que desconociamos.
+Se utilizo IA para la creacion de los README.md y para entender conceptos de Terraform y Python que desconocia.
